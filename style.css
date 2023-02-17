@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #83869a;
+  background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+}
+
+.container {
+  margin: 16px;
+}
+/* header section */
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+h1,
+h3 {
+  color: #13183f;
+  font-weight: 800;
+}
+h2 {
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 32px;
+}
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.main-logo-dark {
+  width: 89px;
+  height: 28px;
+}
+header p {
+  margin: 26px 0;
+}
+
+.main-hero {
+  width: 100%;
+  margin-top: 46px;
+}
+/* button section */
+button {
+  border: none;
+  border-radius: 28px;
+  padding: 11px 24px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+}
+.dark-button {
+  background-color: #13183f;
+  font-weight: 700;
+}
+.colored-button {
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  padding: 15px 38px;
+}
+
+/* main section */
+.main-header-box {
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  padding: 24px 29px 32px 28px;
+  border-radius: 10px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.card {
+  padding: 56px 29px 32px 28px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  position: relative;
+}
+.card p {
+  margin-top: 16px;
+  margin-bottom: 28px;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(50%, -50%);
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: #f74780;
+}
+
+/* footer section */
+footer {
+  background-color: #13183f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 43px 16px;
+}
+.footer-colored-button {
+  background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+  padding: 9px 24px 11px 24px;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(/assets/image-hero-tablet.png),
+      linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -100px right -300px, top right;
+  }
+
+  .main-hero {
+    display: none;
+  }
+
+  .header-text-description {
+    width: 398px;
+    margin-top: 210px;
+  }
+  header {
+    margin-bottom: 210px;
+  }
+
+  /* main section */
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+  .main-header-box {
+    padding: 56px 21px 139px 32px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-image: url(/assets/image-hero-desktop.png),
+      linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -150px right -350px, top right;
+  }
+
+  .header-text-description {
+    margin-top: 185px;
+  }
+
+  header {
+    margin-bottom: 350px;
+  }
+
+  .container {
+    margin: 24px 165px;
+  }
+
+  main {
+    margin-bottom: 140px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0;
+  }
+  .card p {
+    margin-bottom: 52px;
+  }
+
+  .card {
+    padding: 64px 32px 40px 32px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .card,
+  .main-header-box {
+    margin: 50px 20px;
+  }
+
+  footer {
+    padding: 32px 165px;
+  }
+  .dark-button {
+    cursor: pointer;
+  }
+  .dark-button:hover {
+    background-color: #666ca3;
+  }
+  .colored-button{
+    cursor: pointer;
+  }
+  .colored-button:hover {
+    background-image: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  }
+  .footer-colored-button{
+    cursor: pointer;
+  }
+  .footer-colored-button:hover {
+    background-image: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+  }
+  
+  }
+
